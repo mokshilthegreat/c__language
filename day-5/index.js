@@ -59,9 +59,12 @@ console.log("Q6:-", result);
 //Q7:-
 
 let age = 15
-let hasDrivingLicense = true;
+if(age >=18){
+    console.log("Q6:-","hasDrivingLicense")
+}else{
+   console.log(" not have hasDrivingLicense");   
+}
 
-console.log("Q7:-",age>=18 && hasDrivingLicense  )
 
 //Q8:-
 let Num1 = 10
