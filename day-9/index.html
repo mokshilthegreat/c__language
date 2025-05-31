@@ -1,0 +1,32 @@
+<!-- Q-6 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Q-6
+    <h1>Temperature Tracker</h1>
+    <p id="temperatureDisplay"></p>
+    <script>
+      let temperature1 = 66;
+      let lowestTemperature = Infinity;
+      let highestTemperature = -Infinity;
+
+      if (temperature1 < lowestTemperature) {
+        lowestTemperature = temperature1;
+      }
+
+      if (temperature1 > highestTemperature) {
+        highestTemperature = temperature1;
+      }
+        document.getElementById("temperatureDisplay").innerHTML = `
+      <strong>Lowest temperature:</strong> ${lowestTemperature}°C<br>
+      <strong>Highest temperature:</strong> ${highestTemperature}°C
+    `;
+    </script>
+  </body>
+</html>
